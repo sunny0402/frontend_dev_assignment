@@ -220,9 +220,6 @@ html {
   align-items: center;
   /* top right bottom left */
   padding: 7rem 0 10rem 0;
-}
-
-.section-header {
   font-family: "Mulish", sans-serif;
   font-size: 5rem;
   font-weight: 300;
@@ -339,7 +336,7 @@ html {
 .footer {
   width: 100%;
   height: 15rem;
-  background-color: #17181b;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,7 +352,7 @@ html {
 .copyright {
   font-family: "Baloo Da 2", serif;
   font-size: 1.6rem;
-  color: #a7a7a7;
+  color: var(--text);
 }
 
 .social-list a {
@@ -365,40 +362,13 @@ html {
 
 .social-list i {
   font-size: 2rem;
-  color: #a7a7a7;
+  color: var(--element);
 }
 
-.scroll-btn {
-  position: fixed;
-  right: 5rem;
-  bottom: 5rem;
-  width: 4.5rem;
-  height: 4.5rem;
-  background-color: #e2b646;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: #fff;
-  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-}
-
-/* make website responsive */
 /* breakpoint 1500px */
 @media (max-width: 1500px) {
   .service-image-wrapper {
     grid-row: 3/-1;
-  }
-
-  .card {
-    width: 34rem;
-  }
-
-  /* increase width of contact form */
-  .contact-wrapper {
-    width: 80%;
-    height: 65rem;
   }
 
   /* increase width */
@@ -415,24 +385,6 @@ html {
 }
 
 @media (max-width: 1400px) {
-  /* banner element: heading paragraph and button */
-  .banner h1 {
-    font: 6rem;
-    line-height: 7rem;
-  }
-
-  /* decrease font size */
-  .banner p {
-    font-size: 3rem;
-  }
-
-  .banner button {
-    width: 20rem;
-    height: 5rem;
-    font-size: 1.6rem;
-  }
-
-  /* decrease font size */
   .menu-link {
     font-size: 3rem;
   }
@@ -462,7 +414,6 @@ html {
       grid-column: 11 / 15;
     } */
 
-  /* my edit */
   .service-image-wrapper {
     grid-column: 7/10;
     grid-row: 3/6;
@@ -470,54 +421,7 @@ html {
   }
 }
 
-@media (max-width: 1300px) {
-  .projects {
-    padding-bottom: 5rem;
-  }
-
-  .cards-wrapper {
-    /* switch direction */
-    /* flex-direction: column; */
-    /* align-items: center;  */
-    margin-top: 4rem;
-  }
-
-  .card {
-    margin-bottom: 8rem;
-  }
-
-  .contact-wrapper {
-    width: 90%;
-    height: 55rem;
-  }
-
-  .contact-heading {
-    margin-bottom: 2rem;
-  }
-
-  /* inputs and textarea */
-  .field {
-    /* top/bottom left/right */
-    margin: 2rem 0;
-  }
-}
-
 @media (max-width: 1000px) {
-  .banner h1 {
-    font-size: 5rem;
-    line-height: 6rem;
-  }
-
-  .banner p {
-    font-size: 2.5rem;
-  }
-
-  .banner button {
-    width: 18rem;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-
   .services {
     /* change flex direction */
     display: flex;
@@ -538,26 +442,6 @@ html {
     width: 100%;
   }
 
-  .contact-left {
-    width: 0;
-  }
-
-  .contact-right {
-    width: 100%;
-  }
-
-  .field {
-    width: 55rem;
-  }
-
-  .input-group textarea {
-    max-width: 55rem;
-  }
-
-  .submit-btn {
-    width: 55rem;
-  }
-
   .footer-content {
     /* change flex direction */
     flex-direction: column;
@@ -570,30 +454,6 @@ html {
     /* below social media icons */
     order: 1;
     margin-top: 3rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .banner h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
-
-  .banner p {
-    font-size: 2rem;
-  }
-
-  .field {
-    /* @500 px was width: 55rem; */
-    width: 35rem;
-  }
-
-  .input-group textarea {
-    max-width: 35rem;
-  }
-
-  .submit-btn {
-    width: 35rem;
   }
 }
 
