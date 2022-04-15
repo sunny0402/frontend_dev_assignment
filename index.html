@@ -13,6 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -32,15 +36,10 @@
                 </div>
 
                 <div class="navbar-button">
-                    <!-- <button class="login-btn" onclick="window.location.href='#footer';">Login</button> -->
                     <button class="login-btn">Login</button>
                 </div>
-
-
             </nav>
             <!--End of Navbar -->
-
-
 
             <div class="img-wrapper">
                 <img src="images/credit_card_2.jpeg" />
@@ -53,113 +52,103 @@
             <!-- navigation items -->
             <ul class="menu">
 
-                <div class="menu-item-container">
+                <div class="menu-item-container close-menu">
                     <li class="menu-item">
                         <a class="menu-link" id="close-menu" data-content="Close Menu">Close Menu</a>
                     </li>
                 </div>
-                <div class="menu-item-container">
+                <div class="menu-item-container home">
                     <li class="menu-item">
                         <a href="#homepage" class="menu-link" data-content="Home">Home</a>
                     </li>
                 </div>
 
-                <div class="menu-item-container">
+                <div class="menu-item-container insurance">
                     <li class="menu-item">
                         <a href="#insurance" class="menu-link" data-content="Insurance">Insurance</a>
                     </li>
                 </div>
 
-                <div class="menu-item-container">
+                <div class="menu-item-container mortgages">
                     <li class="menu-item">
-                        <a href="#mortgages" class="menu-link" data-content="Mortgages">Mortgages</a>
+                        <a href="#insurance" class="menu-link" data-content="Mortgages">Mortgages</a>
                     </li>
                 </div>
 
-                <!-- <div class="menu-item-container">
+                <div class="menu-item-container auto-and-credit-cards">
                     <li class="menu-item">
-                        <a href="#home-insurance" class="menu-link" data-content="Home Insurance">Home Insurance</a>
-                    </li>
-                </div> -->
-
-                <!-- <div class="menu-item-container">
-                    <li class="menu-item">
-                        <a href="#life-property-insurance" class="menu-link" data-content="Life Property Insurance">Life
-                            Property
-                            Insurance</a>
-                    </li>
-                </div> -->
-
-                <div class="menu-item-container">
-                    <li class="menu-item">
-                        <a href="#auto-and-credit" class="menu-link" data-content="Auto and Credit Cards">Auto and
-                            Credit
-                            Cards</a>
+                        <a href="#insurance" class="menu-link" data-content="Auto and Credit Cards">Auto and
+                            Credit Cards</a>
                     </li>
                 </div>
-
-                <!-- <div class="menu-item-container">
-                    <li class="menu-item">
-                        <a href="#travel-insurance" class="menu-link" data-content="Travel Insurance">Travel
-                            Insurance</a>
-                    </li>
-                </div> -->
             </ul>
     </div>
     </section>
     <!--End of Sidebar -->
 
-    <!-- Page 2: Insurance -->
+    <!-- Page 2: Insurance Services -->
     <section class="services_section" id="insurance">
+        <!-- insurance page header -->
         <div class="section-header">
             <!-- heading and underline -->
             <h1 class="section-heading">Insurance</h1>
             <div class="underline"></div>
         </div>
 
+
         <div class="services">
+            <!-- home insurance -->
             <div class="service">
                 <div class="service-header">
-                    <h3>Insurance</h3>
+                    <i class="fas fa-home"></i>
+                    <h3>Home Insurance</h3>
                 </div>
                 <p class="service-text">
-                    We provide insurance.
+                    We provide home insurance.
                 </p>
             </div>
 
-            <div class="service-image-wrapper">
-                <img src="images/insurance2.jpeg" />
-            </div>
-
-        </div>
-    </section>
-    <!--End of Page 2: Insurance -->
-
-    <!-- Page 3: Mortgages -->
-    <section class="services_section" id="mortgages">
-        <div class="section-header">
-            <!-- heading and underline -->
-            <h1 class="section-heading">Mortgages</h1>
-            <div class="underline"></div>
-        </div>
-
-        <div class="services">
+            <!-- car insurance -->
             <div class="service">
                 <div class="service-header">
-                    <h3>Mortgages</h3>
+                    <i class="fas fa-car"></i>
+                    <h3>Car Insurance</h3>
                 </div>
                 <p class="service-text">
-                    We provide mortgages.
+                    We provide home insurance.
                 </p>
             </div>
 
-            <div class="service-image-wrapper">
-                <img src="images/insurance.png" />
+            <!-- life insurance -->
+            <div class="service">
+                <div class="service-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Life Insurance</h3>
+                </div>
+                <p class="service-text">
+                    We provide life insurance.
+                </p>
             </div>
 
+            <!-- travel insurance -->
+            <div class="service">
+                <div class="service-header">
+                    <i class="fas fa-plane"></i>
+                    <h3>Travel Insurance</h3>
+                </div>
+                <p class="service-text">
+                    We provide travel insurance.
+                </p>
+            </div>
+
+            <!-- image at page center -->
+            <div class="service-image-wrapper">
+                <img src="images/insurance3.jpeg" />
+            </div>
         </div>
     </section>
-    <!-- End of     Page 3: Insurance -->
+    <!--End of Page 2: Insurance Services -->
+
 
 
 
@@ -167,7 +156,7 @@
     <footer class="footer" id="footer">
         <div class="footer-content">
             <p class="copyright">
-                Copyright &copy; 2021, sunny0402 - All rights reserved.
+                Copyright &copy; 2022, Test Rates - All rights reserved.
             </p>
             <div class="social-list">
                 <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
@@ -175,16 +164,10 @@
             </div>
         </div>
     </footer>
-    <a href="#" class="scroll-btn">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- div class="container"-->
+    <!-- End of Footer -->
     </div>
 
     <script src="script.js"></script>
-    <!-- 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
